@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="SalonOS — salon yönetiminin yeni hali." />
+  <title>SalonOS | Giriş</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#0f172a}body{background:#f7f5fb;padding:24px}.shell{max-width:1152px;min-height:calc(100vh - 48px);margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;border:1px solid #fff;border-radius:28px;background:#fff;box-shadow:0 30px 90px rgba(76,29,149,.14)}.hero{position:relative;overflow:hidden;padding:42px;background:#020617;color:#fff;display:flex;flex-direction:column;justify-content:space-between}.glow{position:absolute;width:330px;height:330px;border-radius:50%;filter:blur(75px);opacity:.3}.glow.a{right:-110px;top:-90px;background:#8b5cf6}.glow.b{left:-110px;bottom:-100px;background:#d946ef}.content{position:relative;z-index:1}.brand{display:flex;gap:12px;align-items:center}.logo{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:#fff;color:#6d28d9}.brand strong{font-size:20px}.brand small{display:block;margin-top:2px;color:#94a3b8}.hero h1{max-width:460px;margin:66px 0 18px;font-size:42px;line-height:1.15;letter-spacing:-.035em}.hero p{max-width:470px;color:#cbd5e1;font-size:15px;line-height:1.75}.checks{display:grid;gap:12px;color:#cbd5e1;font-size:14px}.check{display:flex;gap:9px;align-items:center}.tick{color:#34d399}.panel{display:flex;align-items:center;justify-content:center;padding:58px}.box{width:100%;max-width:560px}.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:#ede9fe;color:#6d28d9;font-size:12px;font-weight:700}.panel h2{margin:17px 0 8px;font-size:32px;line-height:1.15;letter-spacing:-.03em}.sub{margin:0;color:#64748b;font-size:14px;line-height:1.6}.roles{display:grid;gap:12px;margin-top:30px}.role{width:100%;display:flex;align-items:center;gap:16px;padding:16px;text-align:left;border:1px solid #e2e8f0;border-radius:18px;background:#fff;cursor:pointer;transition:.18s ease}.role:hover{transform:translateY(-2px);border-color:#c4b5fd;box-shadow:0 12px 28px rgba(124,58,237,.12)}.icon{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:16px;color:#fff;font-size:22px}.owner{background:#7c3aed}.staff{background:#c026d3}.founder{background:#0f172a}.role strong{display:block;font-size:15px}.role span.desc{display:block;margin-top:4px;color:#64748b;font-size:13px;line-height:1.4}.arrow{margin-left:auto;color:#cbd5e1;font-size:22px}.back{border:0;background:none;padding:9px 0;margin-bottom:24px;color:#64748b;font-weight:600;cursor:pointer}.form-head{display:flex;align-items:center;gap:16px}.form-head .icon{width:56px;height:56px;flex-basis:56px}.form-head h2{margin:0;font-size:26px}.fields{display:grid;gap:16px;margin-top:30px}.field label{display:block;margin:0 0 7px;font-size:13px;font-weight:650}.field input{width:100%;height:45px;border:1px solid #dbe2ea;border-radius:11px;padding:0 13px;font:inherit;outline:none}.field input:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px #ede9fe}.submit{height:48px;border:0;border-radius:12px;background:#7c3aed;color:#fff;font-weight:750;font-size:15px;cursor:pointer}.submit:hover{background:#6d28d9}.notice{display:none;margin-top:16px;padding:13px 15px;border-radius:12px;background:#f0fdf4;color:#166534;font-size:13px;line-height:1.5}.mobile-brand{display:none;margin-bottom:34px}.preview{position:fixed;right:16px;bottom:14px;padding:7px 11px;border-radius:999px;background:rgba(15,23,42,.9);color:#fff;font-size:11px;box-shadow:0 8px 24px rgba(15,23,42,.2)}
+    @media(max-width:860px){body{padding:12px}.shell{min-height:calc(100vh - 24px);display:block}.hero{display:none}.panel{min-height:calc(100vh - 24px);padding:30px 22px}.mobile-brand{display:flex}.panel h2{font-size:28px}.role{padding:14px}.preview{right:10px;bottom:10px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="glow a"></div><div class="glow b"></div>
+      <div class="content">
+        <div class="brand"><div class="logo" aria-hidden="true">✂</div><div><strong>SalonOS</strong><small>Salon yönetiminin yeni hali</small></div></div>
+        <h1>Salonunuzdaki herkese özel, tek bir giriş merkezi.</h1>
+        <p>Salon sahipleri işletmesini yönetir, personel kendi programına ulaşır, kurucu ise platformun tamamını kontrol eder.</p>
+      </div>
+      <div class="content checks"><div class="check"><b class="tick">✓</b> Hesabın gerçek rolü sistem tarafından doğrulanır</div><div class="check"><b class="tick">✓</b> Her kullanıcı yalnızca yetkili olduğu alanı görür</div></div>
+    </section>
+    <section class="panel">
+      <div class="box">
+        <div class="brand mobile-brand"><div class="logo" style="background:#7c3aed;color:#fff" aria-hidden="true">✂</div><div><strong>SalonOS</strong><small>Güvenli giriş merkezi</small></div></div>
+        <div id="chooser">
+          <span class="pill">✦ Hoş geldiniz</span>
+          <h2>Nasıl giriş yapmak istiyorsunuz?</h2>
+          <p class="sub">Size uygun alanı seçin. Yetkiniz hesabınızdan otomatik doğrulanır.</p>
+          <div class="roles">
+            <button class="role" data-role="owner"><span class="icon owner">♛</span><span><strong>Salon Sahibi</strong><span class="desc">Şubelerinizi, personelinizi ve randevularınızı yönetin.</span></span><span class="arrow">→</span></button>
+            <button class="role" data-role="staff"><span class="icon staff">♙</span><span><strong>Personel</strong><span class="desc">Kendi çalışma planınızı ve randevularınızı görüntüleyin.</span></span><span class="arrow">→</span></button>
+            <button class="role" data-role="founder"><span class="icon founder">◆</span><span><strong>Kurucu</strong><span class="desc">SalonOS platformunu ve kayıtlı işletmeleri yönetin.</span></span><span class="arrow">→</span></button>
+          </div>
+        </div>
+        <div id="login" hidden>
+          <button class="back" type="button">← Giriş türlerine dön</button>
+          <div class="form-head"><span id="formIcon" class="icon owner">♛</span><div><h2 id="formTitle">Salon sahibi girişi</h2><p id="formDesc" class="sub"></p></div></div>
+          <form class="fields" id="loginForm">
+            <div class="field tenant"><label for="tenant">İşletme kodu</label><input id="tenant" placeholder="ornek-isletme" required /></div>
+            <div class="field"><label for="email">E-posta</label><input id="email" type="email" placeholder="ornek@eposta.com" required /></div>
+            <div class="field"><label for="password">Şifre</label><input id="password" type="password" minlength="6" required /></div>
+            <div class="field otp" hidden><label for="otp">Authenticator veya kurtarma kodu</label><input id="otp" inputmode="numeric" placeholder="6 haneli kod" /></div>
+            <button class="submit" type="submit">Giriş Yap →</button>
+          </form>
+          <div id="notice" class="notice">✓ Ön izleme yayında. Güvenli giriş, veritabanı sunucusu bağlandığında etkinleşecek.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="preview">Frontend ön izleme</div>
+  <script>
+    const copy={owner:{title:'Salon sahibi girişi',desc:'Şubelerinizi, personelinizi ve randevularınızı yönetin.',icon:'♛',cls:'owner'},staff:{title:'Personel girişi',desc:'Kendi çalışma planınızı ve randevularınızı görüntüleyin.',icon:'♙',cls:'staff'},founder:{title:'Kurucu girişi',desc:'SalonOS platformunu ve kayıtlı işletmeleri yönetin.',icon:'◆',cls:'founder'}};
+    const chooser=document.querySelector('#chooser'),login=document.querySelector('#login'),tenant=document.querySelector('.tenant'),otp=document.querySelector('.otp');
+    document.querySelectorAll('.role').forEach(b=>b.addEventListener('click',()=>{const r=b.dataset.role,c=copy[r];chooser.hidden=true;login.hidden=false;document.querySelector('#formTitle').textContent=c.title;document.querySelector('#formDesc').textContent=c.desc;const i=document.querySelector('#formIcon');i.className='icon '+c.cls;i.textContent=c.icon;tenant.hidden=r==='founder';tenant.querySelector('input').required=r!=='founder';otp.hidden=r!=='founder';document.querySelector('#notice').style.display='none'}));
+    document.querySelector('.back').addEventListener('click',()=>{login.hidden=true;chooser.hidden=false});
+    document.querySelector('#loginForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#notice').style.display='block'});
+  </script>
+</body>
+</html>
